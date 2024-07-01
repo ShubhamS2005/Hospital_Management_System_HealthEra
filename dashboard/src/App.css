@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #3939d9f2;
+}
+
+
+/* Navbar */
+.sidebar {
+  position: fixed;
+  width: 120px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  align-items: center;
+  color: #fff;
+  padding: 70px 0;
+}
+.sidebar svg {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+}
+.sidebar svg:hover {
+  background: #fff;
+  color: #3939d9f2;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sidebar .links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper {
+  display: none;
+}
+.wrapper .hamburger {
+  display: none;
+}
+.hamburger{
+  cursor: pointer;
+}
+
+@media (max-width: 1208px) {
+  .sidebar {
+    background: #3939d9f2;
+    left: -100%;
+    transition: 0.3s;
+  }
+  .show {
+    left: 0;
+    transition: 0.3s;
+  }
+  .wrapper {
+    display: block;
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    font-size: 34px;
+    background: #3939d9f2;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .hamburger {
+    display: block;
+  }
+}
+@media (max-width: 485px) {
+  .wrapper {
+    left: 20px;
+  }
+  .show {
+    width: 80px;
+  }
+}
+
+
+/* Login */
+.container {
+  padding: 0 100px;
+  background-color: beige;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.login img{
+  height: 300px;
+}
+.login p{
+  margin: 1.1rem;
+  color: blue;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+input,select{
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+button{
+  margin: 17px;
+  height: 45px;
+  width: 130px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(140deg, #9083d5, #271776ca);
+}
+button:hover{
+  color: yellow;
+}
+
+
+/* Messages */
+.page{
+  background-color: beige;
+  margin-left: 115px;
+  height: 100vh;
+  border-top-left-radius: 2.7rem;
+  border-bottom-left-radius: 2.7rem;
+}
+.page h1{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 1.1rem 1.2rem;
+  font-size: 2.5rem;
+}
+.banner{
+  margin:1.1rem 1.2rem;
+}
+.card{
+  background-color: white;
+  margin: 1.1rem 1.2rem;
+  border-radius: 1.5rem;
+}
+.details p{
+  font-size: 16px;
+  margin:1rem;
+  font-weight: 700;
+}
+.details span{
+  font-weight: 500;
+}
+
+/* Add Admin */
+.page h3{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 1.1rem 1.2rem
+}
+.page h3,.page h1{
+  margin-top: 50px;
+  text-align: center;
+} 
+.form-container{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container select,.form-container input{
+  margin: 1.1rem;
+  padding: 1.1rem 2.3rem;
+}
+input[type="date"]{
+  padding: 0.9rem 3.8rem;
+}
+
+/* Add doctor */
+.doctor-add{
+  display: flex;
+}
+
+.first-wrapper{
+  display: flex;
+  margin: 1.1rem 1.3rem;
+  flex-direction: column;
+}
+.first-wrapper img{
+    height: max-content;
+    height: 300px;
+}
+.form-container-doctor{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.form-container-doctor button{
+  width: 150px;
+}
+
+/* Doctors */
+.card img{
+  margin: 1.1rem 1.2rem;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.card h4{
+  margin-left:1.2rem;
+  font-weight: 800;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.doctors .banner{
+  display: flex;
+  flex-wrap: wrap;
+}
+.doctors .card{
+  height: 30.3rem;
+  text-align: center;
+  width: 20.4rem; 
+}
+
+/* Dashboard */
+.page .b-container{
+  display: flex;
+}
+.fb-img img{
+  height: 200px;
+  width: 200px;
+  margin: 1.1rem 1.2rem;
+}
+
+.content{
+  margin: 1.1rem 1.2rem;
+  width: 30%;
+}
+.firstBox{
+  background-color:darkkhaki;
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  border-radius: 10px;
+}
+
+.firstBox h4{
+  text-transform: capitalize;
+  color: #9083d5;
+  
+}
+.b-container .secondBox{
+  margin: 12px;
+  border-radius: 10px;
+  background-color:white;
+  padding: 1.1rem 3.4rem;
+  text-align: center;
+  color: red;
+
+}
+.thirdBox{
+  margin: 12px;
+  border-radius: 10px;
+  padding: 1.1rem 3.4rem;
+  text-align: center;
+  background-color: green;
+  color: white;
+
+}
+.b-container{
+  border-radius: 17px;
+}
+.b-container span{
+  font-weight: 900;
+}
+
+.dashboard table{
+  margin-top:17px ;
+  width: 100%;
+}
+table td{
+  text-align: center;
+  text-transform: capitalize;
+
+}
+
+/* Utility Classes  */
+input[type="date"]:before {
+  content: attr(placeholder);
+  color: #444;
+  margin-right: 0.5em;
+}
+input[type="time"]:before {
+  content: attr(placeholder);
+  color: #444;
+  margin-right: 0.5em;
+}
+textarea{
+  border: 1px solid black;
+}
+
+.dashboard table td .green{
+  font-size: 20px;
+  color: #16a34a;
+}
+.dashboard table td .red{
+  font-size: 20px;
+  color: #dc2626;
+}
+.dashboard .banner table select:focus {
+  outline: none;
+}
+.dashboard .banner table .value-pending {
+  color: #eab308;
+}
+.dashboard .banner table .value-accepted {
+  color: #16a34a;
+}
+.dashboard .banner table .value-rejected {
+  color: #dc2626;
+}
+
+@media (max-width: 1208px) {
+  .page {
+    margin-left: 0;
+    border-radius: 0;
+  }
+  table th{
+    margin: 0px;
+  }
+  table td {
+    margin: 30px;
+
+  }
+}
+@media (max-width: 485px) {
+  .page {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 460px) {
+  .logo {
+    width: 100%;
+  }
+}
+@media (max-width: 518px) {
+  .doctor-add{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1086px) {
+  .b-container{
+    flex-wrap: wrap;
+  }
+  .b-container button{
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 491px) {
+  .firstBox{
+    flex-direction: column;
+  }
+  .secondBox,.thirdBox{
+    margin: auto;
+  }
+}
+
+
+
+/* Bed Status */
+.tdButton{
+  cursor: pointer;
+}
+.addBtn{
+  display: flex;
+  margin: 7px;
+}
+
+span svg{
+  font-size: 26px;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  margin-top: 7px;
+}
+
+/* Bed Update */
+.links{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.BedUpdate .links a:hover{
+  color: yellow;
+}
+
+.BedUpdate .links a{
+  text-decoration: none;
+  list-style: none;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius:9px ;
+  background: linear-gradient(140deg, #9083d5, #271776ca);
+  padding: 8px;
+  color: white;
+}
+.BedUpdate .btn{
+  margin: 17px;
+  height: 45px;
+  width: 130px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(140deg, #9083d5, #271776ca);
+}
+.BedUpdate .btn:hover{
+  color: yellow;
+}
+.BedUpdate .update{
+  margin: 1.1rem;
+}
+.BedUpdate p{
+  margin: 1.1rem;
+}
+
+
+
+/* Discharge */
+.discharge{
+  background-color: white;
+  display: flex;
+  margin: 40px;
+  flex-direction: column;
+  border:1px solid black;
+}
+.discharge img{
+  height: 170px;
+
+}
+.discharge .img{
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+  align-items: center;
+}
+.discharge .personal{
+  display: flex;
+  border:1px solid black;
+  text-transform: capitalize;
+  text-align: center;
+}
+.discharge .content{
+  margin-top:10px ;
+  align-items: center;
+  padding: 1.1rem;
+  width: 60%;
+}
+.discharge  p{
+  font-weight: 600;
+  margin: 9px;
+}
+.discharge span{
+  font-weight: normal;
+  margin: 9px;
+}
+.discharge h2{
+  margin-top: 30px;
+}
+.discharge .discharge-info{
+  display: flex;
+  border:1px solid black;
+  text-transform: capitalize;
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.discharge .billing{
+  display: flex;
+  border:1px solid black;
+  text-transform: capitalize;
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+
+}
+
+.boxes{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-around;
+}
+.boxes .box{
+  display: flex;
+  margin: 1.1rem;
+  margin-top: 12.9rem;
+  height: 60px;
+  width: 130px;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
