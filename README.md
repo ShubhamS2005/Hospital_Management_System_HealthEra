@@ -1,11 +1,13 @@
+<h1>HealthEra</h1>
 This is a Hospital Management System namly HealthEra which is made using the complete MERN stack which stands for mongoDb, Express js ,React and Node js. There are many features which have been done in this project which are :
 
-To Run This Project 
+<h3>To Run This Project </h3>
 1. Copy all files in your pc
 2. install required modules using npm i in all three folders
 3. for frontend,dashboard use npm run dev and for backend use npm start
 
-What i Learnt By this project:-
+<h3>What i Learnt By this project:-</h3>
+
 1. Autherisation / Authentication
 2. Json Web Tockens Usage
 3. Hooks in React like UseState,UseEffect,UsePdf
@@ -14,10 +16,12 @@ What i Learnt By this project:-
 6. Catch Async Errors
 7. Middlewares
 8. Industry Level Folder Placing i.e. MVC
+   
 1. User and Admin Autherization and Authentication
 2. Register and Login of User and Admin
 
-Now Specifically Some admin Features:-
+<h3>Now Specifically Some admin Features:-</h3>
+
 1. Appointment dashboard
 2. Doctor ,Ward, Patient Admit 
 3. Messages
@@ -26,7 +30,8 @@ Now Specifically Some admin Features:-
 6. Downlaod discharge Papers
 7. Billing
    
-Now Specifically Some Patient Features:-
+<h3>Now Specifically Some Patient Features:-</h3>
+
 1. Landing page
 2. Send Message / Appointment
 3. Dashboard
