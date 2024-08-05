@@ -23,7 +23,7 @@ const UpdatePatient = () => {
     const fetchpatient = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:8000/api/v1/user/get-patient/${id}`,
+          `https://backend-deployement-hms.onrender.com/api/v1/user/get-patient/${id}`,
           { withCredentials: true }
         );
         setPatient(data.patient);
@@ -45,7 +45,7 @@ const UpdatePatient = () => {
       };
       await axios
         .put(
-          `http://localhost:8000/api/v1/user/patient/updateId/${id}`,
+          `https://backend-deployement-hms.onrender.com/api/v1/user/patient/updateId/${id}`,
           updateData,
           { withCredentials: true }
         )

@@ -31,7 +31,7 @@ const BedStatus = () => {
     const fetchWards = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8000/api/v1/user/getallwards",
+          "https://backend-deployement-hms.onrender.com/api/v1/user/getallwards",
           { withCredentials: true }
         );
         setWards(data.wards);
@@ -50,7 +50,7 @@ const BedStatus = () => {
     try {
       e.preventDefault();
       await axios
-        .delete(`http://localhost:8000/api/v1/user/ward/delete/${wardid}`)
+        .delete(`https://backend-deployement-hms.onrender.com/api/v1/user/ward/delete/${wardid}`)
         .then((res) => {
 
           toast.success(res.data.message);
@@ -66,7 +66,7 @@ const BedStatus = () => {
       try {
         if (wardid) {
           const { data } = await axios.get(
-            `http://localhost:8000/api/v1/user/get-ward-patients/${wardid}`,
+            `https://backend-deployement-hms.onrender.com/api/v1/user/get-ward-patients/${wardid}`,
             { withCredentials: true }
           )
           setWardPatient(data.wardmates)
@@ -100,7 +100,7 @@ const BedStatus = () => {
       };
       await axios
         .put(
-          `http://localhost:8000/api/v1/user/patient/discharge/${patid}`,
+          `https://backend-deployement-hms.onrender.com/api/v1/user/patient/discharge/${patid}`,
           updateData,
           { withCredentials: true }
         )

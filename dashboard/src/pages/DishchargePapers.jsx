@@ -17,7 +17,7 @@ const DishchargePapers = () => {
     const fetchPatients = async () => {
       try {
           const { data } = await axios.get(
-            "http://localhost:8000/api/v1/user/getallpatients",
+            "https://backend-deployement-hms.onrender.com/api/v1/user/getallpatients",
             { withCredentials: true }
           )
           setPatients(data.patients)

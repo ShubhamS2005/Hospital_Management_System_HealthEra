@@ -24,7 +24,7 @@ const BedAdd = () => {
     e.preventDefault()
     try {
         await axios.post(
-            "http://localhost:8000/api/v1/user/admin/postward",
+            "https://backend-deployement-hms.onrender.com/api/v1/user/admin/postward",
             {wardname,room_name,capacity,number_of_beds,number_of_rooms,price,facilities},
             {
                 withCredentials:true,

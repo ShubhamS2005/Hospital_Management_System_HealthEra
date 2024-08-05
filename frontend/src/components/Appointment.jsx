@@ -36,7 +36,7 @@ const Appointment = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "http://localhost:8000/api/v1/user/doctors",
+        "https://backend-deployement-hms.onrender.com/api/v1/user/doctors",
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -50,7 +50,7 @@ const Appointment = () => {
     e.preventDefault()
     try {
       const hasvisitedBool = Boolean(hasvisited)
-      await axios.post("http://localhost:8000/api/v1/appointment/post",
+      await axios.post("https://backend-deployement-hms.onrender.com/api/v1/appointment/post",
         {
           firstname,
           lastname,

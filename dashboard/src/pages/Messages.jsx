@@ -9,7 +9,7 @@ const Messages = () => {
   useEffect(()=>{
     const fetchMessages=async()=>{
       try {
-        const {data}=await axios("http://localhost:8000/api/v1/message/getallmessages",{withCredentials:true})
+        const {data}=await axios("https://backend-deployement-hms.onrender.com/api/v1/message/getallmessages",{withCredentials:true})
         setMessages(data.messages)
 
 

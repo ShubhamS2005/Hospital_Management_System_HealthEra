@@ -11,8 +11,8 @@ const Home=()=>{
   return (
     <>
     {/* These all are components used in home file */}
-    <Hero title={"Welcome To HealthEra | Your Trusted HealthCare Provider"} imageUrl={"/public/photos/front_doctor.png"}/>
-    <Biography imageUrl={"/public/photos/computer.png"}/>
+    <Hero title={"Welcome To HealthEra | Your Trusted HealthCare Provider"} imageUrl={"/photos/front_doctor.png"}/>
+    <Biography imageUrl={"/photos/computer.png"}/>
     <Departments/>
     <MessageForm/> 
     </>

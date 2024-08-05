@@ -28,7 +28,7 @@ const AdmitPatient = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "http://localhost:8000/api/v1/user/doctors",
+        "https://backend-deployement-hms.onrender.com/api/v1/user/doctors",
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -58,7 +58,7 @@ const AdmitPatient = () => {
     e.preventDefault()
     try {
       await axios.post(
-        "http://localhost:8000/api/v1/user/admin/admit-patient",
+        "https://backend-deployement-hms.onrender.com/api/v1/user/admin/admit-patient",
         {firstname,lastname,email,dob,gender,admitDate,wardname,room_name,admited,doctor_firstname,doctor_lastname,department,phone},
         {withCredentials:true,
           headers:"Content-Type:application/json"

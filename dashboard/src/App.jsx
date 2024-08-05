@@ -31,7 +31,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/v1/user/admin/me",
+          "https://backend-deployement-hms.onrender.com/api/v1/user/admin/me",
           {
             withCredentials: true,
           }

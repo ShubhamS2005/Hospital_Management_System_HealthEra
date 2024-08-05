@@ -15,7 +15,7 @@ const AppoitnmentDelete = () => {
 
     const DeleteAppointment=async(id)=>{
         try {
-            await axios.delete(`http://localhost:8000/api/v1/user/delete/${id}`
+            await axios.delete(`https://backend-deployement-hms.onrender.com/api/v1/user/delete/${id}`
                 ,{withCredentials:true}
             ).then((res)=>{
                 toast.success(res.data.message)
@@ -33,7 +33,7 @@ const AppoitnmentDelete = () => {
             try {
                 const id = User._id
                 await axios.get(
-                    `http://localhost:8000/api/v1/appointment/get-appointment/${id}`,
+                    `https://backend-deployement-hms.onrender.com/api/v1/appointment/get-appointment/${id}`,
                     { withCredentials: true }
                 ).then((res) => {
                     setAppointments(res.data.appointment)

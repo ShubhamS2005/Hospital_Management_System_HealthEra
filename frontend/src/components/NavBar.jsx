@@ -10,7 +10,7 @@ const NavBar = () => {
   const {isAuthenticated,setIsAuthenticated }=useContext(Context)
   const navigateto=useNavigate()
   const handleLogout=async()=>{
-      await axios.get("http://localhost:8000/api/v1/user/patient/logout",{
+      await axios.get("https://backend-deployement-hms.onrender.com/api/v1/user/patient/logout",{
         withCredentials:true
       }).then(res=>{
         toast.success(res.data.message)

@@ -32,7 +32,7 @@ const BedUpdate = () => {
         };
         await axios
           .put(
-            `http://localhost:8000/api/v1/user/ward/update/${id}`,
+            `https://backend-deployement-hms.onrender.com/api/v1/user/ward/update/${id}`,
             updateData,
             { withCredentials: true }
           )
@@ -45,7 +45,7 @@ const BedUpdate = () => {
         };
         await axios
           .put(
-            `http://localhost:8000/api/v1/user/ward/update/${id}`,
+            `https://backend-deployement-hms.onrender.com/api/v1/user/ward/update/${id}`,
             updateData,
             { withCredentials: true }
           )
@@ -58,7 +58,7 @@ const BedUpdate = () => {
         };
         await axios
           .put(
-            `http://localhost:8000/api/v1/user/ward/update/${id}`,
+            `https://backend-deployement-hms.onrender.com/api/v1/user/ward/update/${id}`,
             updateData,
             { withCredentials: true }
           )
@@ -71,7 +71,7 @@ const BedUpdate = () => {
         };
         await axios
           .put(
-            `http://localhost:8000/api/v1/user/ward/update/${id}`,
+            `https://backend-deployement-hms.onrender.com/api/v1/user/ward/update/${id}`,
             updateData,
             { withCredentials: true }
           )
@@ -84,7 +84,7 @@ const BedUpdate = () => {
         };
         await axios
           .put(
-            `http://localhost:8000/api/v1/user/ward/update/${id}`,
+            `https://backend-deployement-hms.onrender.com/api/v1/user/ward/update/${id}`,
             updateData,
             { withCredentials: true }
           )

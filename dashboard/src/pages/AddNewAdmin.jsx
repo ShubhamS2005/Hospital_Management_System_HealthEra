@@ -18,7 +18,7 @@ const AddNewAdmin = () => {
     try {
       e.preventDefault();
       await axios.post(
-        "http://localhost:8000/api/v1/user/admin/addnew",
+        "https://backend-deployement-hms.onrender.com/api/v1/user/admin/addnew",
         { firstname, lastname, email, password, phone, dob, gender},
         {
           withCredentials: true,

@@ -24,7 +24,7 @@ const DownloadPapers = () => {
       const fetchPatient = async () => {
           try {
         const { data } = await axios.get(
-          `http://localhost:8000/api/v1/user/get-patient/${id}`,
+          `https://backend-deployement-hms.onrender.com/api/v1/user/get-patient/${id}`,
           { withCredentials: true }
         );
         setPatient(data.patient);

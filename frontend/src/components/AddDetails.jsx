@@ -33,7 +33,7 @@ const AddDetails = () => {
       formData.append("MedicalHistory", MedicalHistory)
       formData.append("patientAvatar", patientAvatar)
 
-       await axios.put(`http://localhost:8000/api/v1/user/add-details/${User._id}`, 
+       await axios.put(`https://backend-deployement-hms.onrender.com/api/v1/user/add-details/${User._id}`, 
         formData,
         {withCredentials:true,
           headers: { "Content-Type": "multipart/form-data" },

@@ -13,7 +13,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8000/api/v1/appointment/getall",
+          "https://backend-deployement-hms.onrender.com/api/v1/appointment/getall",
           { withCredentials: true }
         )
         setAppointments(data.appointments)
@@ -29,7 +29,7 @@ const Dashboard = () => {
     const fetchDoctors = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8000/api/v1/user/doctors",
+          "https://backend-deployement-hms.onrender.com/api/v1/user/doctors",
           { withCredentials: true }
         )
         setDoctors(data.doctors)
@@ -42,7 +42,7 @@ const Dashboard = () => {
   })
   const handleUpdateStatus = async (appointmentid, status) => {
     try {
-      const { data } = await axios.put(`http://localhost:8000/api/v1/appointment/update/${appointmentid}`
+      const { data } = await axios.put(`https://backend-deployement-hms.onrender.com/api/v1/appointment/update/${appointmentid}`
         , { status }
         , { withCredentials: true }
       )

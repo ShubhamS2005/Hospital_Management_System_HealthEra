@@ -21,7 +21,7 @@ const Update = () => {
     useEffect(() => {
         const fetchUser = async () => {
             const { data } = await axios.get(
-                "http://localhost:8000/api/v1/user/patient/me",
+                "https://backend-deployement-hms.onrender.com/api/v1/user/patient/me",
                 { withCredentials: true }
             );
             setUser(data.user);
@@ -38,7 +38,7 @@ const Update = () => {
                 const userData = {
                     firstname: firstname,
                 };
-                await axios.put(`http://localhost:8000/api/v1/user/update/${user._id}`, userData,{withCredentials:true}).then((res)=>{
+                await axios.put(`https://backend-deployement-hms.onrender.com/api/v1/user/update/${user._id}`, userData,{withCredentials:true}).then((res)=>{
                     toast.success(res.data.message)
                 })
             }
@@ -47,7 +47,7 @@ const Update = () => {
                     lastname: lastname,
                     
                 };
-                await axios.put(`http://localhost:8000/api/v1/user/update/${user._id}`, userData,{withCredentials:true}).then((res)=>{
+                await axios.put(`https://backend-deployement-hms.onrender.com/api/v1/user/update/${user._id}`, userData,{withCredentials:true}).then((res)=>{
                     toast.success(res.data.message)
                 })
             }
@@ -56,7 +56,7 @@ const Update = () => {
                     email: email,
       
                 };
-                await axios.put(`http://localhost:8000/api/v1/user/update/${user._id}`, userData,{withCredentials:true}).then((res)=>{
+                await axios.put(`https://backend-deployement-hms.onrender.com/api/v1/user/update/${user._id}`, userData,{withCredentials:true}).then((res)=>{
                     toast.success(res.data.message)
                 })
             }
@@ -64,7 +64,7 @@ const Update = () => {
                 const userData = {
                     phone: phone,  
                 };
-                await axios.put(`http://localhost:8000/api/v1/user/update/${user._id}`, userData,{withCredentials:true}).then((res)=>{
+                await axios.put(`https://backend-deployement-hms.onrender.com/api/v1/user/update/${user._id}`, userData,{withCredentials:true}).then((res)=>{
                     toast.success(res.data.message)
                 })
             }
